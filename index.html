@@ -1,11 +1,60 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <title>Exercise 2</title>
-</head>
-<body>
-    <center>
-        <h1>Kalkulator</h1>
-    </center>
-</body>
-</html>
+	<html>
+
+		<title>MRizqiAR</title>
+
+		<head>
+
+	    	<script type="text/javascript">
+	    		function tambah (val1, val2){
+	    			var hasil;
+	    			hasil = parseInt(val1) + parseInt(val2);
+
+	    			document.getElementById("hasil").innerHTML = hasil;
+	    			console.log(hasil);
+	    		}
+
+	    		function kurang(val1, val2) {
+	    			var hasil; 
+	    			hasil = parseInt(val1) - parseInt(val2);
+
+	    			document.getElementById("hasil").innerHTML = hasil;
+	    			console.log;
+	    		}
+
+	    		function kali(val1, val2) {
+	    			var hasil; 
+	    			hasil = parseInt(val1) * parseInt(val2);
+
+	    			document.getElementById("hasil").innerHTML = hasil;
+	    			console.log;
+	    		}
+
+	    	
+	    	</script>
+	    </head>
+
+	    <p align="center">Kalkulator Sederhana</p>
+
+
+		<body>
+
+	    	<div class='name'>
+
+			<input type="text" id="bilangan1" /> 
+			<input type="text" id="bilangan2" /> 
+
+			<h2 id="hasil"></h2>
+
+			<button onclick = "tambah(bilangan1.value, bilangan2.value)" >Tambah</button>
+
+			<button onclick = "kurang(bilangan1.value, bilangan2.value)" >kurang</button>
+			
+			<button onclick = "kali(bilangan1.value, bilangan2.value)" >kali</button>
+
+
+	 	</div>
+
+	    
+	</body>
+
+	</html>
